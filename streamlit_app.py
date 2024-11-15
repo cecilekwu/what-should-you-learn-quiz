@@ -130,10 +130,10 @@ def main():
         intro_page()
     elif st.session_state.current_question_index <= 4:  # Ensure it's within the valid range of questions
         questions = [
-            "What are you aspiring for in your career right now?",
-            "What makes you feel fulfilled in your career?",
-            "You've just spotted a potential issue with a project. Do you first...",
-            "What type of class would you rather take?"
+            "What sounds like a good plan for your career right now?",
+            "At work, besides free granola bars, what do you love?",
+            "Crisis! You've just spotted a potential issue with a project. Do you first...",
+            "Which type of class would you grab a seat in?"
         ]
         options = [
             ("Being an effective people manager and leading my team to (professional) glory!", "Honing my skills and understanding what makes me uniquely successful!"),
