@@ -4,7 +4,7 @@ import pandas as pd
 import streamlit as st
 from PIL import Image
 
-image = Image.open('L&D Quiz Banner.png')
+image = Image.open('L&D Quiz Banner Edit.png')
 
 # Function to display header image
 def display_header_image():
@@ -131,7 +131,7 @@ def main():
     elif st.session_state.current_question_index <= 4:  # Ensure it's within the valid range of questions
         questions = [
             "What sounds like a good plan for your career right now?",
-            "At work, besides free granola bars, what do you love?",
+            "At work, besides free swag, what do you love?",
             "Crisis! You've just spotted a potential issue with a project. Do you first...",
             "Which type of class would you grab a seat in?"
         ]
