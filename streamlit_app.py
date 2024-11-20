@@ -14,7 +14,7 @@ def display_header_image():
 # Intro page
 def intro_page():
    display_header_image()
-   st.title("What Kind of Learner Are You?")
+   st.title("What's Your Learning Style? Discover the Course For You")
    st.write("Just like different ski slopes, everyone's career journey has its own twists, turns, and peaks. Need help navigating your path to success? Take this quiz to find out what kind of learner you are, then get a ski pass to the perfect course to kickstart your Learning @ Snowflake journey. \n\nAfter getting your result, hit the slopes in your career development by checking out all offerings on the [Learning @ Snowflake site](https://thefridge--simpplr.vf.force.com/apex/simpplr__app?u=/site/a14Ui000001URGjIAO/dashboard) - including in-person, virtual, and self-guided lessons. \n\nFor internal sharing only.")
   
    if st.button("Start Quiz"):
@@ -26,7 +26,7 @@ def intro_page():
 # Question pages
 def question_page(question, options):
    display_header_image()
-   st.title("What Kind of Learner Are You?")
+   st.title("What's Your Learning Style? Discover the Course For You")
   
    # Display the question number (Question 1, Question 2, etc.)
    question_number = st.session_state.current_question_index
@@ -50,7 +50,7 @@ def question_page(question, options):
 # Results page
 def result_page():
    display_header_image()
-   st.title("What Kind of Learner You Are...")
+   st.title("What's Your Learning Style? Discover the Course For You")
    st.write("Thank you for completing the quiz!")
 
    # Get answers
@@ -65,19 +65,19 @@ def result_page():
    # Display personality description and image
    personality_descriptions = {
        "For Leaders: Communicating with Clarity and Impact": {
-           "description": "You learn through action, not just theory. You absorb information best when you're teaching or explaining it to someone else - because learning is also about paying it forward. You've never met a whiteboard you didn't like, and you probably spend more time preparing for meetings than actually having them. You may or may not have made a few TED Talk-style presentations just for fun. \n\nIn [this course](https://wd5.myworkday.com/snowflake/learning/program/4686a758f52610014e452e4828200001?type=2d29754fdb8e100008b50ff6bc94003b), you'll practice crafting concise, clear, and tailored messages that meet your team's needs. Learn how to relay leadership updates effectively and develop your own communication template. You'll also gain hands-on experience with our AI Communication Coach to sharpen your skills in delivering messages that drive both understanding and action.",
+           "description": "**You're the Conductor.** You learn through action, not just theory. You absorb information best when you're teaching or explaining it to someone else - because learning is also about paying it forward. You've never met a whiteboard you didn't like, and you probably spend more time preparing for meetings than actually having them. You may or may not have made a few TED Talk-style presentations just for fun. \n\nIn [this course](https://wd5.myworkday.com/snowflake/learning/program/4686a758f52610014e452e4828200001?type=2d29754fdb8e100008b50ff6bc94003b), you'll practice crafting concise, clear, and tailored messages that meet your team's needs. Learn how to relay leadership updates effectively and develop your own communication template. You'll also gain hands-on experience with our AI Communication Coach to sharpen your skills in delivering messages that drive both understanding and action.",
            "image": "CC&impact.png"
        },
        "For Leaders: Feedback and Coaching": {
-           "description": "You're a reflective learner who believes in growth through feedback - you see the importance of conversations, feedback loops, and collaboration. You love those 'Wow, I didn't think about it that way' moments, and later bestowing that wisdom on others. Your friends likely come to you for advice about their careers, relationships, and even which brand of toothpaste they should buy. \n\nIn [this course](https://wd5.myworkday.com/snowflake/learning/program/4686a758f52610014e452e4828200001?type=2d29754fdb8e100008b50ff6bc94003b), we'll focus on delivering quality feedback that supports development and performance growth. You'll get hands-on practice with the Situation-Behavior-Impact (SBI) model, learning not only from your peers but also with support from our AI Feedback Coach. Through interactive discussions and practice, you'll refine your skills to handle coaching conversations with confidence.",
+           "description": "**You're the Inspirer.** You're a reflective learner who believes in growth through feedback - you see the importance of conversations, feedback loops, and collaboration. You love those 'Wow, I didn't think about it that way' moments, and later bestowing that wisdom on others. Your friends likely come to you for advice about their careers, relationships, and even which brand of toothpaste they should buy. \n\nIn [this course](https://wd5.myworkday.com/snowflake/learning/program/4686a758f52610014e452e4828200001?type=2d29754fdb8e100008b50ff6bc94003b), we'll focus on delivering quality feedback that supports development and performance growth. You'll get hands-on practice with the Situation-Behavior-Impact (SBI) model, learning not only from your peers but also with support from our AI Feedback Coach. Through interactive discussions and practice, you'll refine your skills to handle coaching conversations with confidence.",
            "image": "FC.png"
        },
        "Own Your Career": {
-           "description": "You're a driven learner who learns best when you have control over your own pace and direction. You regularly evaluate where you can improve and what new skills you can acquire. You're likely trying to map out your 'personal brand.' You spend more time on LinkedIn than you'd like to admit, and your goals for the next 10 years are on a sticky note somewhere in your office. \n\n[The program](https://wd5.myworkday.com/snowflake/learning/program/a7a9f37b5bf41001bc095eab9b1d0000?type=2d29754fdb8e100008b50ff6bc94003b) includes a self-paced eLearning course and an opt-in virtual peer-breakout workshop. Learn the basics on your own then join us for a workshop to refine your plan with peer breakouts and facilitator support. These sessions are designed to complement each other, but can be taken separately for a flexible learning experience.",
+           "description": "**You're the Navigator.** You're a driven learner who learns best when you have control over your own pace and direction. You regularly evaluate where you can improve and what new skills you can acquire. You're likely trying to map out your 'personal brand.' You spend more time on LinkedIn than you'd like to admit, and your goals for the next 10 years are on a sticky note somewhere in your office. \n\n[The program](https://wd5.myworkday.com/snowflake/learning/program/a7a9f37b5bf41001bc095eab9b1d0000?type=2d29754fdb8e100008b50ff6bc94003b) includes a self-paced eLearning course and an opt-in virtual peer-breakout workshop. Learn the basics on your own then join us for a workshop to refine your plan with peer breakouts and facilitator support. These sessions are designed to complement each other, but can be taken separately for a flexible learning experience.",
            "image": "OYC.png"
        },
        "Your Brain at Work: Neuroscience of Success": {
-           "description": "You're a curious, experimental learner who loves understanding the 'why' behind everything. You're constantly testing new ways to boost your brain so you can work smarter, not harder. You've probably had a mental debate over whether you should 'optimize your circadian rhythm' or just keep drinking coffee. You've definitely tried meditation at least once, but only after googling how. \n\n[This live workshop](https://wd5.myworkday.com/snowflake/learning/course/99397b597d241001e6f1a10379cb0000?type=9882927d138b100019b6a2df1a46018b) shares neuroscience-backed strategies that will help you learn how to create brain-friendly environments, leverage oxytocin-boosting collaboration models, and practice self-care techniques that optimize your neural performance.",
+           "description": "**You're the Experimenter.** You're a curious learner who loves understanding the 'why' behind everything. You're constantly testing new ways to boost your brain so you can work smarter, not harder. You've probably had a mental debate over whether you should 'optimize your circadian rhythm' or just keep drinking coffee. You've definitely tried meditation at least once, but only after googling how. \n\n[This live workshop](https://wd5.myworkday.com/snowflake/learning/course/99397b597d241001e6f1a10379cb0000?type=9882927d138b100019b6a2df1a46018b) shares neuroscience-backed strategies that will help you learn how to create brain-friendly environments, leverage oxytocin-boosting collaboration models, and practice self-care techniques that optimize your neural performance.",
            "image": "brain.png"
          }
    }
@@ -130,7 +130,7 @@ def main():
         intro_page()
     elif st.session_state.current_question_index <= 4:  # Ensure it's within the valid range of questions
         questions = [
-            "What sounds like a good plan for your career right now?",
+            "How would you describe your role right now?",
             "At work, besides free swag, what do you love?",
             "Crisis! You've just spotted a potential issue with a project. Do you first...",
             "Which type of class would you grab a seat in?"
