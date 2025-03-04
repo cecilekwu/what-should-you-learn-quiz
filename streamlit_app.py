@@ -82,7 +82,7 @@ def result_page():
        },
        "Irresistible: Building Your Brand": {
            "description": "You're the Architect. You know that success isn’t just about what you do, it’s about how people perceive your work. You’re constantly looking for ways to refine your presence, build credibility, and make a lasting impact. Whether it’s through storytelling, strategic networking, or simply showing up as your best self, you want to shape your reputation with intention. \n\nIn [this course](https://wd5.myworkday.com/snowflake/learning/course/4686a758f5261001b4ed3a045de60000?type=9882927d138b100019b6a2df1a46018b), you’ll identify the strengths that have propelled you forward and uncover habits that may be holding you back. Through interactive discussions and reflection exercises, you’ll walk away with a clear, confident personal brand that aligns with your next big career move.",
-           "image": "BYB1.png"
+           "image": "BYB.png"
        },
        "What Got You Here, Won’t Get You There": {
            "description": "You're the Trailblazer. You’re ambitious, driven, and always pushing forward, but sometimes, old habits can slow you down. You recognize that growth isn’t just about working harder; it’s about working smarter. You’re ready to let go of limiting behaviors and embrace the mindset shifts that will take your career to the next level. \n\n[In this course,](https://wd5.myworkday.com/snowflake/learning/course/6d6fc9e7540b10016e9979a636d40000?type=9882927d138b100019b6a2df1a46018b) you’ll explore common career roadblocks and develop strategies to overcome them. You’ll leave with a personalized action plan to refine your approach, enhance your effectiveness, and keep climbing.",
